@@ -1,0 +1,92 @@
+@import('../main.css');
+
+/*** LOVE ***/
+
+/* You: Pink
+ * Me:  Yellow
+ */
+
+/* Page */
+
+body {
+  background-image: url("../images/Love/body.png"); /* The avatar bar background image */
+}
+
+/* Buddy icons at the left of the window */
+
+.avatar.you {
+  color: #961e59; /* The border color of the avatar block */
+  background-image: url('../images/Love/avatar-you.png');
+}
+
+.avatar.me {
+  color: #95971e; /* The border color of the avatar block */
+  background-image: url('../images/Love/avatar-me.png');
+}
+
+/* Time stamp */
+
+.you .time {
+  color: #961e59; /* The border color of the avatar block */
+}
+
+.me .time {
+  color: #95971e; /* The border color of the avatar block */
+}
+
+/* Headings */
+
+.heading.you {
+  border-color: #961e59;
+  background-color: #961e59;
+}
+
+.heading.me {
+  border-color: #95971e;
+  background-color: #dee12d; /* Lighter because it's uggly elsewhere */
+}
+
+.heading.you > div {
+  background-color: #961e59;
+}
+
+.heading.me > div {
+  background-color: #dee12d; /* Lighter because it's uggly elsewhere */
+}
+
+/* Message body */
+
+.message.you {
+  border-left-color: #961e59;
+  background: #faf0f5 url("../images/Love/bottom-you.png") 0 100% no-repeat; /* Color: Saturation=10, Value=250 */
+}
+
+.message.me {
+  border-left-color: #95971e;
+  background: #fafaf0 url("../images/Love/bottom-me.png") 0 100% no-repeat; /* Color: Saturation=10, Value=250 */
+}
+
+.message.you.rtl {
+  border-right-color: #961e59;
+  background: #faf0f5 url("../images/Love/bottom-you-rtl.png") 100% 100% no-repeat;
+}
+
+.message.me.rtl {
+  border-right-color: #95971e;
+  background: #fafaf0 url("../images/Love/bottom-me-rtl.png") 100% 100% no-repeat;
+}
+
+/*** NO AVATAR BAR ***/
+
+.avatar {
+  visibility: hidden;
+}
+
+body {
+  background-image: none;
+}
+
+#Chat {
+  margin-right: 0;
+  margin-left: 0;
+}

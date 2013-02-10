@@ -1,0 +1,30 @@
+.shadow {
+  float:left;
+  background: url(images/shadowAlpha.png) no-repeat bottom right;
+  margin: 6px 0 0 5px;
+  }
+
+.shadow img {
+  display: block;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #a9a9a9;
+  margin: -6px 6px 6px -6px;
+  padding: 4px;
+  }
+
+.message .avatar {
+  background: none;
+  left: 10px;
+  position: absolute;
+  padding: 11px;
+  padding-right: 1.5em;
+  top: 0px;
+  width: 62px;
+  height: 50px;
+}
+
+.message .avatar img {
+  width: 48px;
+  height: 48px;
+}

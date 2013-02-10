@@ -1,0 +1,32 @@
+include INSTALL
+include Makefile
+include Changelog
+include LICENSE
+include LICENSE.icons-oxygen
+include README.icons-oxygen
+include TODO
+include HACKING
+include series60-remote.e4p
+include MANIFEST
+include MANIFEST.in
+include pc/install/README
+include pc/pics/oxygen/LICENSE
+include pc/pics/oxygen/README
+
+include series60-remote
+include pc/generate-pro.sh
+include pc/send_to_mobile
+include pc/series60-remote.desktop
+include pc/pics/oxygen-icon-list
+include mobile/create_package
+
+recursive-include mobile *.py *.sis *.svg
+recursive-include pc *.pro *.py
+recursive-include pc/data *.html *.css
+recursive-include pc/data/chat-themes *.png *.jpg *.gif
+recursive-include pc/ui *.ui *.qrc
+recursive-include pc/lang *.ts *.qm
+recursive-include pc/pics *.png *.svgz *.ico *.py
+recursive-include pc/pics/other *.gif *.svg
+recursive-include pc/install *.spec *.iss
+recursive-include pc/install/debian *

@@ -1,0 +1,22 @@
+<div class="messages me %messageDirection%">
+
+  <div class="heading me %messageDirection%">
+    <div>
+      <div><!-- No space on Compact View with long people names (displayed like <pre> to have one single line)
+        --><div class="icon"><div><img src="%userIconPath%" align="absmiddle" alt="&lt;======" /></div></div>&nbsp;<strong>%sender%</strong><!--
+        No space when copying to text
+      --></div>
+    </div>
+  </div>
+
+  <div class="message me %messageDirection%">
+    <span class="time" title="%time{%x %H:%M:%S}%">%time{%H:%M}%<span class="textCopy"> : </span></span>
+    <span class="content" style="background-color: %textbackgroundcolor{}%;">%message%</span><!--
+    No space when copying to text
+  --></div>
+
+  <div class="insert"><div id="insert" /></div>
+
+  <div class="clearer" />
+
+</div>

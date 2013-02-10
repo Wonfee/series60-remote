@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalendarEntryEdit</class>
+ <widget class="QDialog" name="CalendarEntryEdit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>543</width>
+    <height>313</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">New calendar entry</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/view-calendar</normaloff>:/view-calendar</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="bottomMargin">
+    <number>6</number>
+   </property>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="fieldGrowthPolicy">
+      <enum>QFormLayout::ExpandingFieldsGrow</enum>
+     </property>
+     <property name="horizontalSpacing">
+      <number>3</number>
+     </property>
+     <property name="verticalSpacing">
+      <number>6</number>
+     </property>
+     <property name="leftMargin">
+      <number>10</number>
+     </property>
+     <property name="topMargin">
+      <number>10</number>
+     </property>
+     <property name="rightMargin">
+      <number>15</number>
+     </property>
+     <property name="bottomMargin">
+      <number>15</number>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Title:</string>
+       </property>
+       <property name="buddy">
+        <cstring>titleLine</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="titleLine"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Location:</string>
+       </property>
+       <property name="buddy">
+        <cstring>locationLine</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="locationLine"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Start:</string>
+       </property>
+       <property name="buddy">
+        <cstring>startDate</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QDateEdit" name="startDate">
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTimeEdit" name="startTime"/>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>End:</string>
+       </property>
+       <property name="buddy">
+        <cstring>endDate</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QDateEdit" name="endDate">
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTimeEdit" name="endTime"/>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <property name="leftMargin">
+        <number>4</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="recurrenceLabel">
+         <property name="text">
+          <string>No recurrence</string>
+         </property>
+         <property name="buddy">
+          <cstring>recurrenceButton</cstring>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="recurrenceButton">
+         <property name="text">
+          <string>Edit...</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Reminder:</string>
+       </property>
+       <property name="buddy">
+        <cstring>reminderCheckBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <property name="leftMargin">
+        <number>4</number>
+       </property>
+       <item>
+        <widget class="QCheckBox" name="reminderCheckBox">
+         <property name="text">
+          <string>Reminder:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QStackedWidget" name="reminderStack">
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="basicReminderWidget">
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QSpinBox" name="reminderTimeBox">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>70</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximum">
+              <number>500</number>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="reminderUnitBox">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>110</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="advancedReminderWidget">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QDateTimeEdit" name="reminderDateTime">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="reminderAdvancedButton">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Advanced...</string>
+         </property>
+         <property name="checkable">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Priority:</string>
+       </property>
+       <property name="buddy">
+        <cstring>priorityBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QComboBox" name="priorityBox">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_8">
+       <property name="text">
+        <string>Access:</string>
+       </property>
+       <property name="buddy">
+        <cstring>accessBox</cstring>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QComboBox" name="accessBox">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Discard|QDialogButtonBox::Reset|QDialogButtonBox::Save</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>titleLine</tabstop>
+  <tabstop>locationLine</tabstop>
+  <tabstop>startDate</tabstop>
+  <tabstop>startTime</tabstop>
+  <tabstop>endDate</tabstop>
+  <tabstop>endTime</tabstop>
+  <tabstop>recurrenceButton</tabstop>
+  <tabstop>reminderCheckBox</tabstop>
+  <tabstop>reminderTimeBox</tabstop>
+  <tabstop>reminderUnitBox</tabstop>
+  <tabstop>reminderAdvancedButton</tabstop>
+  <tabstop>priorityBox</tabstop>
+  <tabstop>accessBox</tabstop>
+  <tabstop>buttonBox</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>222</x>
+     <y>288</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>290</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reminderCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>reminderTimeBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>120</x>
+     <y>183</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>193</x>
+     <y>182</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reminderCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>reminderUnitBox</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>183</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>355</x>
+     <y>199</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reminderCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>reminderAdvancedButton</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>131</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>427</x>
+     <y>184</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>titleLine</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>entryChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>131</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>18</x>
+     <y>7</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>locationLine</sender>
+   <signal>textEdited(QString)</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>entryChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>187</x>
+     <y>47</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>7</x>
+     <y>48</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startDate</sender>
+   <signal>dateTimeChanged(QDateTime)</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>entryChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>105</x>
+     <y>88</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>32</x>
+     <y>96</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startTime</sender>
+   <signal>dateTimeChanged(QDateTime)</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>entryChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>208</x>
+     <y>82</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>endDate</sender>
+   <signal>dateTimeChanged(QDateTime)</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>entryChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>103</x>
+     <y>113</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>48</x>
+     <y>131</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>endTime</sender>
+   <signal>dateTimeChanged(QDateTime)</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>entryChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>251</x>
+     <y>134</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reminderCheckBox</sender>
+   <signal>clicked()</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>entryChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>171</x>
+     <y>198</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>312</x>
+     <y>138</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>priorityBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>entryChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>312</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>accessBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>entryChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>228</x>
+     <y>262</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>398</x>
+     <y>226</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reminderTimeBox</sender>
+   <signal>editingFinished()</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>entryChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>245</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>491</x>
+     <y>136</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reminderUnitBox</sender>
+   <signal>currentIndexChanged(int)</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>entryChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>355</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>507</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reminderDateTime</sender>
+   <signal>dateTimeChanged(QDateTime)</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>entryChanged()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>265</x>
+     <y>187</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>271</x>
+     <y>156</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reminderCheckBox</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>reminderDateTime</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>139</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reminderAdvancedButton</sender>
+   <signal>toggled(bool)</signal>
+   <receiver>CalendarEntryEdit</receiver>
+   <slot>setAdvancedReminder(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>407</x>
+     <y>191</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>447</x>
+     <y>147</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>entryChanged()</slot>
+  <slot>setAdvancedReminder(bool)</slot>
+ </slots>
+</ui>

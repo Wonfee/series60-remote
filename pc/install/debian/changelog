@@ -1,0 +1,23 @@
+series60-remote (0.4.80-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Lukas Hetzenecker <LuHe@gmx.at>  Thu, 01 Jul 2010 23:53:13 +0000
+
+series60-remote (0.3.93-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Lukas Hetzenecker <LuHe@gmx.at>  Mon, 10 May 2010 17:49:22 +0000
+
+series60-remote (0.3.92-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- Lukas Hetzenecker <LuHe@gmx.at>  Mon, 29 Mar 2010 23:25:07 +0000
+
+series60-remote (0.3.91-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Lukas Hetzenecker <LuHe@gmx.at>  Tue, 09 Feb 2010 12:54:41 +0100

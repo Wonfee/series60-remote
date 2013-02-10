@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  word-wrap: break-word;
+}
+
+#Chat
+{
+}
+
+.message {
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  min-height: 70px;
+  clear: both;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 110px;
+}
+
+.message.alternate {
+  background: #edf2ff repeat-y 100% 0;
+  border-top: 1px solid #dce6ff;
+  border-bottom: 1px solid #dce6ff;
+}
+
+.message .content {	
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.message.alternate .next {
+  margin-top: 0.4em;
+  padding-top: 0.4em;
+  border-top: 1px solid #dce6ff;
+}
+
+.message .next {
+  margin-top: 0.4em;
+  padding-top: 0.4em;
+  border-top: 1px solid #dce6ff;
+}
+
+.message .date {
+  color: #2f63b3;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.message .author {
+  font-style: normal;
+  display: block;
+  color: #030612;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.message .author a {
+  font-style: normal;
+  color: #030612;
+}
+
+.message .avatar {
+  background: transparent url("images/bg_gravatar.gif") no-repeat 0 0;
+  left: 10px;
+  position: absolute;
+  padding: 11px;
+  padding-right: 1.5em;
+  top: 1em;
+  width: 62px;
+  height: 50px;
+}
+
+.message .avatar img {
+  width: 48px;
+  height: 48px;
+}
+
+.status {
+  background: transparent url("images/icon_info.gif") no-repeat 0.3em 0.3em;
+  position: relative;
+  top: 0.3em;
+  padding: 0.3em;
+  padding-left: 1em;
+  padding-left: 28px;
+  margin-left: 1em;
+}
+
+.status .time {
+  color: #2f63b3;
+}

@@ -1,0 +1,20 @@
+Source: series60-remote
+Section: python
+Priority: extra
+Maintainer: Lukas Hetzenecker <LuHe@gmx.at>
+Build-Depends: cdbs, debhelper (>= 7), python, libqt4-dev, pyqt4-dev-tools, python-support
+Standards-Version: 3.8.3
+Homepage: http://series60-remote.sourceforge.net
+
+Package: series60-remote
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}, python-bluez, python-qt4, python-qt4-sql, sqlite3, libqt4-sql-sqlite
+Recommends: python-obexftp, python-matplotlib
+Description: Application to manage your S60 mobile phone
+ Series60-Remote is an application for Linux and Windows that manages Nokia
+ mobile phones with the S60 operating system.
+ The application provides the following features:
+  - Message management
+  - Contact management
+  - File management
+

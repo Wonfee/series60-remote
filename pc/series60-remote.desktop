@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Series60-Remote
+Type=Application
+Exec=series60-remote
+Icon=phone
+Comment=Application to manage your S60 mobile phone
+Comment[de]=Software-Suite zum Verwalten eines S60 Mobiltelefons
+MimeType=
+Categories=Network;Office;

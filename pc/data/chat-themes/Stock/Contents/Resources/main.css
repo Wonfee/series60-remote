@@ -1,0 +1,162 @@
+body {
+    margin:0;
+    padding:0;
+    color: #141414;
+    background-color: #d9d7d6;
+    background-image: url('images/bg.png');
+    background-repeat: repeat-x;
+    background-attachment:fixed;
+    position: relative;
+    top:0px;
+}
+p {
+    margin: 0;
+    padding: 0px;
+}
+a {
+    color: #0033CC;
+}
+img {
+    border: none;
+}
+.container {
+    margin: 0 2px 0 6px;
+    padding-bottom:4px;
+    position: relative;
+    clear: both;
+}
+.contents_left {
+    float: left;
+    margin: 0px;
+    width:37px;
+    padding: 0px;
+}
+.contents_right {
+    width:auto;
+    margin: 11px 5px 0px 37px;
+    position: relative;
+}
+.buddyicon {
+    height: 36px;
+    width: 36px;
+    background: #FFF;
+    border-width: 1px 0 1px 1px;
+    border-style: solid;
+    border-color: #AAA;
+    -khtml-border-top-left-radius: 2px;
+    -khtml-border-bottom-left-radius: 2px;
+    position: absolute;
+}
+
+/*         header        */
+
+.header {
+    font-size: 11px;
+    height:20px; 
+    color: #FFF;
+    font-family: Sans;
+    font-weight: bold;
+    text-shadow: #444 1px 1px 1px;
+}
+.sender {
+    padding:2px 30px 0 6px;
+    overflow:hidden;
+    height:15px;
+}
+.time {
+    position: absolute;
+    right:5px;
+    top:2px;
+}
+
+/*         message        */
+
+.message {
+    background-color: #f0f0f0;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #AAA;
+    -khtml-border-bottom-right-radius: 2px;
+/*    -khtml-border-bottom-left-radius: 2px;*/
+}
+
+.message_top {
+    position: relative;
+    overflow:hidden;
+}
+.text {
+    line-height: 15px;
+    padding: 1px 10px 1px 8px;
+}
+.nextoutgoingmessage {
+    margin-top: 3px;
+    padding-top: 2px;
+    border-top: 1px solid #DEDEDE;
+}
+.nextoutgoingmessage:hover .nomtime {
+    visibility: visible;
+}
+.nextoutgoingmessage .nomtime {
+    float: right; 
+    color: #BBB;
+    top: 14px;
+    margin-right: -5px;
+    text-align:right;
+    visibility: hidden;
+}
+
+/*         status message        */
+
+.status_container {
+    background-color: #f0f0f0;
+    border: 1px solid #AAA;
+    -khtml-border-radius: 2px;
+    font-size: 10px;
+    margin:11px 7px 0px 6px;
+    position:relative;
+    clear:both;
+    padding: 2px;
+    color: #777;
+}
+.statustime {
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    margin: 0px;
+    color: #777;
+}
+
+/*         header        */
+
+.incomingheader_center {
+    background: url("images/in.png") top right repeat-x;
+    height:20px;
+    position:absolute;
+    left:0px;
+    right:3px;
+    top:0px;
+}
+.incomingheader_right {
+    background: url("images/in_right.png") top right no-repeat;
+    width:4px;
+    height:20px;
+    position: absolute;
+    right:0px;
+    top:0px;
+}
+.outgoingheader_center {
+    background: url("images/out.png") top right repeat-x;
+    height:20px;
+    position:absolute;
+    left:0px;
+    right:3px;
+    top:0px;
+}
+.outgoingheader_right {
+    width:4px;
+    height:20px;
+    position: absolute;
+    right:0px;
+    top:0px;
+    background: url("images/out_right.png") top right no-repeat;
+}

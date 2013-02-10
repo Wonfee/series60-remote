@@ -1,0 +1,1462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ContactsEdit</class>
+ <widget class="QDialog" name="ContactsEdit">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>852</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>New contact...</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resource.qrc">
+    <normaloff>:/contacts</normaloff>:/contacts</iconset>
+  </property>
+  <property name="modal">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="leftMargin">
+    <number>6</number>
+   </property>
+   <property name="rightMargin">
+    <number>6</number>
+   </property>
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="generalTab">
+      <attribute name="title">
+       <string>General</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_29">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <property name="leftMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_18">
+           <property name="leftMargin">
+            <number>6</number>
+           </property>
+           <property name="rightMargin">
+            <number>6</number>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="ImageButton" name="thumbButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item>
+            <layout class="QFormLayout" name="formLayout_2">
+             <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::ExpandingFieldsGrow</enum>
+             </property>
+             <property name="leftMargin">
+              <number>8</number>
+             </property>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Name:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_13">
+               <item>
+                <widget class="QLineEdit" name="name">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="readOnly">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="editNameButton">
+                 <property name="text">
+                  <string>Edit...</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="nickname_label">
+               <property name="text">
+                <string notr="true">Nickname:</string>
+               </property>
+               <property name="buddy">
+                <cstring>nickname</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QLineEdit" name="nickname"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="jobLayout">
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="company_label">
+             <property name="text">
+              <string notr="true">Company:</string>
+             </property>
+             <property name="buddy">
+              <cstring>company</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="company"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="jobtitle_label">
+             <property name="text">
+              <string notr="true">Job title:</string>
+             </property>
+             <property name="buddy">
+              <cstring>jobtitle_1</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <layout class="QHBoxLayout" name="horizontalLayout_15">
+             <item>
+              <widget class="QLineEdit" name="jobtitle_1"/>
+             </item>
+             <item>
+              <widget class="QToolButton" name="add_jobtitle">
+               <property name="icon">
+                <iconset resource="resource.qrc">
+                 <normaloff>:/list-add</normaloff>:/list-add</iconset>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="text">
+              <string>Address:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="general_address">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_16">
+             <item>
+              <widget class="QPushButton" name="editGeneralAddressButton">
+               <property name="text">
+                <string>Edit...</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QFormLayout" name="formLayout_4">
+           <property name="leftMargin">
+            <number>3</number>
+           </property>
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="rightMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="birthday_label">
+             <property name="text">
+              <string notr="true">Birthday:</string>
+             </property>
+             <property name="buddy">
+              <cstring>birthday</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QDateEdit" name="birthday">
+             <property name="dateTime">
+              <datetime>
+               <hour>0</hour>
+               <minute>0</minute>
+               <second>0</second>
+               <year>2000</year>
+               <month>1</month>
+               <day>1</day>
+              </datetime>
+             </property>
+             <property name="currentSection">
+              <enum>QDateTimeEdit::DaySection</enum>
+             </property>
+             <property name="calendarPopup">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_7">
+             <property name="text">
+              <string>Groups:</string>
+             </property>
+             <property name="buddy">
+              <cstring>groups</cstring>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <layout class="QHBoxLayout" name="horizontalLayout_17">
+             <item>
+              <widget class="QLineEdit" name="groups">
+               <property name="enabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="editGroupsButton">
+               <property name="text">
+                <string>Edit...</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_4">
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>3</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QScrollArea" name="scrollArea">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>400</width>
+            <height>537</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <layout class="QFormLayout" name="generalNumbersLayout">
+             <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::ExpandingFieldsGrow</enum>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>3</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="general_telephone_label">
+               <property name="text">
+                <string notr="true">Telephone:</string>
+               </property>
+               <property name="buddy">
+                <cstring>general_telephone_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <widget class="QLineEdit" name="general_telephone_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_general_telephone">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="general_mobile_label">
+               <property name="text">
+                <string notr="true">Mobile:</string>
+               </property>
+               <property name="buddy">
+                <cstring>general_mobile_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <item>
+                <widget class="QLineEdit" name="general_mobile_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_general_mobile">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="general_video_label">
+               <property name="text">
+                <string notr="true">Video call:</string>
+               </property>
+               <property name="buddy">
+                <cstring>general_video_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_2">
+               <item>
+                <widget class="QLineEdit" name="general_video_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_general_video">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="general_fax_label">
+               <property name="text">
+                <string notr="true">Fax:</string>
+               </property>
+               <property name="buddy">
+                <cstring>general_fax_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QLineEdit" name="general_fax_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_general_fax">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="general_pager_label">
+               <property name="text">
+                <string notr="true">Pager:</string>
+               </property>
+               <property name="buddy">
+                <cstring>general_pager_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QLineEdit" name="general_pager_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_general_pager">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="general_internettel_label">
+               <property name="text">
+                <string notr="true">Internet telephone:</string>
+               </property>
+               <property name="buddy">
+                <cstring>general_internettel_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <item>
+                <widget class="QLineEdit" name="general_internettel_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_general_internettel">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="general_ptt_label">
+               <property name="text">
+                <string notr="true">Push to talk:</string>
+               </property>
+               <property name="buddy">
+                <cstring>general_ptt_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_7">
+               <item>
+                <widget class="QLineEdit" name="general_ptt_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_general_ptt">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="7" column="0">
+              <widget class="QLabel" name="general_shareview_label">
+               <property name="text">
+                <string notr="true">Share view:</string>
+               </property>
+               <property name="buddy">
+                <cstring>general_shareview_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <widget class="QLineEdit" name="general_shareview_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_general_shareview">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="8" column="0">
+              <widget class="QLabel" name="general_sip_label">
+               <property name="text">
+                <string notr="true">SIP:</string>
+               </property>
+               <property name="buddy">
+                <cstring>general_sip_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <widget class="QLineEdit" name="general_sip_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_general_sip">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="9" column="0">
+              <widget class="QLabel" name="general_mail_label">
+               <property name="text">
+                <string notr="true">E-mail:</string>
+               </property>
+               <property name="buddy">
+                <cstring>general_mail_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_10">
+               <item>
+                <widget class="QLineEdit" name="general_mail_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_general_mail">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="10" column="0">
+              <widget class="QLabel" name="general_web_label">
+               <property name="text">
+                <string notr="true">Web address:</string>
+               </property>
+               <property name="buddy">
+                <cstring>general_web_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item>
+                <widget class="QLineEdit" name="general_web_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_general_web">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="11" column="0">
+              <widget class="QLabel" name="general_dtmf_label">
+               <property name="text">
+                <string notr="true">DTMF:</string>
+               </property>
+               <property name="buddy">
+                <cstring>general_dtmf_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="11" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <item>
+                <widget class="QLineEdit" name="general_dtmf_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_general_dtmf">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="homeTab">
+      <attribute name="title">
+       <string>Home</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_27">
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="rightMargin">
+        <number>6</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="topMargin">
+          <number>5</number>
+         </property>
+         <property name="rightMargin">
+          <number>5</number>
+         </property>
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>Address:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextBrowser" name="home_address">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_24">
+           <item>
+            <widget class="QPushButton" name="editHomeAddressButton">
+             <property name="text">
+              <string>Edit...</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Preferred</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>80</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_6">
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>3</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QScrollArea" name="scrollArea_2">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>398</width>
+            <height>537</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <layout class="QFormLayout" name="homeNumbersLayout">
+             <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::ExpandingFieldsGrow</enum>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>8</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="home_telephone_label">
+               <property name="text">
+                <string notr="true">Telephone:</string>
+               </property>
+               <property name="buddy">
+                <cstring>home_telephone_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_22">
+               <item>
+                <widget class="QLineEdit" name="home_telephone_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_home_telephone">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="home_mobile_label">
+               <property name="text">
+                <string notr="true">Mobile:</string>
+               </property>
+               <property name="buddy">
+                <cstring>home_mobile_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_25">
+               <item>
+                <widget class="QLineEdit" name="home_mobile_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_home_mobile">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="home_video_label">
+               <property name="text">
+                <string notr="true">Video call:</string>
+               </property>
+               <property name="buddy">
+                <cstring>home_video_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_26">
+               <item>
+                <widget class="QLineEdit" name="home_video_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_home_video">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="home_fax_label">
+               <property name="text">
+                <string notr="true">Fax:</string>
+               </property>
+               <property name="buddy">
+                <cstring>home_fax_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_40">
+               <item>
+                <widget class="QLineEdit" name="home_fax_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_home_fax">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="home_internettel_label">
+               <property name="text">
+                <string notr="true">Internet telephone:</string>
+               </property>
+               <property name="buddy">
+                <cstring>home_internettel_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_41">
+               <item>
+                <widget class="QLineEdit" name="home_internettel_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_home_internettel">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="home_mail_label">
+               <property name="text">
+                <string notr="true">E-mail:</string>
+               </property>
+               <property name="buddy">
+                <cstring>home_mail_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_45">
+               <item>
+                <widget class="QLineEdit" name="home_mail_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_home_mail">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="home_web_label">
+               <property name="text">
+                <string notr="true">Web address:</string>
+               </property>
+               <property name="buddy">
+                <cstring>home_web_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_46">
+               <item>
+                <widget class="QLineEdit" name="home_web_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_home_web">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="businessTab">
+      <attribute name="title">
+       <string>Business</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_38">
+       <property name="leftMargin">
+        <number>6</number>
+       </property>
+       <property name="rightMargin">
+        <number>6</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="leftMargin">
+          <number>8</number>
+         </property>
+         <property name="topMargin">
+          <number>5</number>
+         </property>
+         <property name="rightMargin">
+          <number>5</number>
+         </property>
+         <property name="bottomMargin">
+          <number>5</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_25">
+           <property name="text">
+            <string>Address:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextBrowser" name="business_address">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_23">
+           <item>
+            <widget class="QPushButton" name="editBusinessAddressButton">
+             <property name="text">
+              <string>Edit...</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Preferred</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>80</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_5">
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>3</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QScrollArea" name="scrollArea_3">
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="scrollAreaWidgetContents_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>398</width>
+            <height>537</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_9">
+           <item>
+            <layout class="QFormLayout" name="businessNumbersLayout">
+             <property name="fieldGrowthPolicy">
+              <enum>QFormLayout::ExpandingFieldsGrow</enum>
+             </property>
+             <property name="leftMargin">
+              <number>5</number>
+             </property>
+             <property name="topMargin">
+              <number>5</number>
+             </property>
+             <property name="rightMargin">
+              <number>8</number>
+             </property>
+             <property name="bottomMargin">
+              <number>5</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QLabel" name="business_telephone_label">
+               <property name="text">
+                <string notr="true">Telephone:</string>
+               </property>
+               <property name="buddy">
+                <cstring>business_telephone_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_19">
+               <item>
+                <widget class="QLineEdit" name="business_telephone_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_business_telephone">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="business_mobile_label">
+               <property name="text">
+                <string notr="true">Mobile:</string>
+               </property>
+               <property name="buddy">
+                <cstring>business_mobile_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_20">
+               <item>
+                <widget class="QLineEdit" name="business_mobile_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_business_mobile">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="business_video_label">
+               <property name="text">
+                <string notr="true">Video call:</string>
+               </property>
+               <property name="buddy">
+                <cstring>business_video_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_21">
+               <item>
+                <widget class="QLineEdit" name="business_video_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_business_video">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="business_fax_label">
+               <property name="text">
+                <string notr="true">Fax:</string>
+               </property>
+               <property name="buddy">
+                <cstring>business_fax_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_37">
+               <item>
+                <widget class="QLineEdit" name="business_fax_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_business_fax">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="business_internettel_label">
+               <property name="text">
+                <string notr="true">Internet telephone:</string>
+               </property>
+               <property name="buddy">
+                <cstring>business_internettel_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_39">
+               <item>
+                <widget class="QLineEdit" name="business_internettel_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_business_internettel">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="business_mail_label">
+               <property name="text">
+                <string notr="true">E-mail:</string>
+               </property>
+               <property name="buddy">
+                <cstring>business_mail_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_43">
+               <item>
+                <widget class="QLineEdit" name="business_mail_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_business_mail">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="business_web_label">
+               <property name="text">
+                <string notr="true">Web address:</string>
+               </property>
+               <property name="buddy">
+                <cstring>business_web_1</cstring>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <layout class="QHBoxLayout" name="horizontalLayout_44">
+               <item>
+                <widget class="QLineEdit" name="business_web_1"/>
+               </item>
+               <item>
+                <widget class="QToolButton" name="add_business_web">
+                 <property name="icon">
+                  <iconset resource="resource.qrc">
+                   <normaloff>:/list-add</normaloff>:/list-add</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="notesTab">
+      <attribute name="title">
+       <string>Notes</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="leftMargin">
+        <number>14</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>14</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <layout class="QVBoxLayout" name="notesLayout">
+         <item>
+          <widget class="QLabel" name="label_30">
+           <property name="text">
+            <string>Notes:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTextEdit" name="notes_1"/>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_28">
+         <item>
+          <widget class="QPushButton" name="add_note">
+           <property name="text">
+            <string>New note</string>
+           </property>
+           <property name="icon">
+            <iconset resource="resource.qrc">
+             <normaloff>:/list-add</normaloff>:/list-add</iconset>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Apply|QDialogButtonBox::Cancel|QDialogButtonBox::Ok|QDialogButtonBox::Reset</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ImageButton</class>
+   <extends>QPushButton</extends>
+   <header>widget.ImageButton</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>ContactsEdit</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>254</x>
+     <y>543</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>ContactsEdit</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>322</x>
+     <y>543</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

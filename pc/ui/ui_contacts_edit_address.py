@@ -1,0 +1,97 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ui/src/contacts_edit_address.ui'
+#
+# Created: Wed Nov 17 12:05:56 2010
+#      by: PyQt4 UI code generator 4.7.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+class Ui_ContactsEditAddress(object):
+    def setupUi(self, ContactsEditAddress):
+        ContactsEditAddress.setObjectName("ContactsEditAddress")
+        ContactsEditAddress.setWindowModality(QtCore.Qt.WindowModal)
+        ContactsEditAddress.resize(400, 300)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(":/contacts"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        ContactsEditAddress.setWindowIcon(icon)
+        self.verticalLayout = QtGui.QVBoxLayout(ContactsEditAddress)
+        self.verticalLayout.setSpacing(6)
+        self.verticalLayout.setMargin(10)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.formLayout = QtGui.QFormLayout()
+        self.formLayout.setObjectName("formLayout")
+        self.street_label = QtGui.QLabel(ContactsEditAddress)
+        self.street_label.setText("Street:")
+        self.street_label.setObjectName("street_label")
+        self.formLayout.setWidget(0, QtGui.QFormLayout.LabelRole, self.street_label)
+        self.street = QtGui.QLineEdit(ContactsEditAddress)
+        self.street.setObjectName("street")
+        self.formLayout.setWidget(0, QtGui.QFormLayout.FieldRole, self.street)
+        self.po_box_label = QtGui.QLabel(ContactsEditAddress)
+        self.po_box_label.setText("Post-office box:")
+        self.po_box_label.setObjectName("po_box_label")
+        self.formLayout.setWidget(1, QtGui.QFormLayout.LabelRole, self.po_box_label)
+        self.po_box = QtGui.QLineEdit(ContactsEditAddress)
+        self.po_box.setObjectName("po_box")
+        self.formLayout.setWidget(1, QtGui.QFormLayout.FieldRole, self.po_box)
+        self.extension = QtGui.QLineEdit(ContactsEditAddress)
+        self.extension.setObjectName("extension")
+        self.formLayout.setWidget(2, QtGui.QFormLayout.FieldRole, self.extension)
+        self.zip_code_label = QtGui.QLabel(ContactsEditAddress)
+        self.zip_code_label.setText("Postal/ZIP code:")
+        self.zip_code_label.setObjectName("zip_code_label")
+        self.formLayout.setWidget(3, QtGui.QFormLayout.LabelRole, self.zip_code_label)
+        self.zip_code = QtGui.QLineEdit(ContactsEditAddress)
+        self.zip_code.setObjectName("zip_code")
+        self.formLayout.setWidget(3, QtGui.QFormLayout.FieldRole, self.zip_code)
+        self.extension_label = QtGui.QLabel(ContactsEditAddress)
+        self.extension_label.setText("Extension:")
+        self.extension_label.setObjectName("extension_label")
+        self.formLayout.setWidget(2, QtGui.QFormLayout.LabelRole, self.extension_label)
+        self.city_label = QtGui.QLabel(ContactsEditAddress)
+        self.city_label.setText("City:")
+        self.city_label.setObjectName("city_label")
+        self.formLayout.setWidget(4, QtGui.QFormLayout.LabelRole, self.city_label)
+        self.state_label = QtGui.QLabel(ContactsEditAddress)
+        self.state_label.setText("State/Province:")
+        self.state_label.setObjectName("state_label")
+        self.formLayout.setWidget(5, QtGui.QFormLayout.LabelRole, self.state_label)
+        self.country_label = QtGui.QLabel(ContactsEditAddress)
+        self.country_label.setText("Country/Region:")
+        self.country_label.setObjectName("country_label")
+        self.formLayout.setWidget(6, QtGui.QFormLayout.LabelRole, self.country_label)
+        self.city = QtGui.QLineEdit(ContactsEditAddress)
+        self.city.setObjectName("city")
+        self.formLayout.setWidget(4, QtGui.QFormLayout.FieldRole, self.city)
+        self.state = QtGui.QLineEdit(ContactsEditAddress)
+        self.state.setObjectName("state")
+        self.formLayout.setWidget(5, QtGui.QFormLayout.FieldRole, self.state)
+        self.country = QtGui.QLineEdit(ContactsEditAddress)
+        self.country.setObjectName("country")
+        self.formLayout.setWidget(6, QtGui.QFormLayout.FieldRole, self.country)
+        self.verticalLayout.addLayout(self.formLayout)
+        self.buttonBox = QtGui.QDialogButtonBox(ContactsEditAddress)
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Ok)
+        self.buttonBox.setObjectName("buttonBox")
+        self.verticalLayout.addWidget(self.buttonBox)
+        self.street_label.setBuddy(self.street)
+        self.po_box_label.setBuddy(self.po_box)
+        self.zip_code_label.setBuddy(self.zip_code)
+        self.extension_label.setBuddy(self.extension)
+        self.city_label.setBuddy(self.city)
+        self.state_label.setBuddy(self.state)
+        self.country_label.setBuddy(self.country)
+
+        self.retranslateUi(ContactsEditAddress)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("accepted()"), ContactsEditAddress.accept)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("rejected()"), ContactsEditAddress.reject)
+        QtCore.QMetaObject.connectSlotsByName(ContactsEditAddress)
+
+    def retranslateUi(self, ContactsEditAddress):
+        ContactsEditAddress.setWindowTitle(QtGui.QApplication.translate("ContactsEditAddress", "Edit contact address...", None, QtGui.QApplication.UnicodeUTF8))
+
+import resource_rc

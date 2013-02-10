@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: series60-remote
+Version: 0.4.80
+Summary: Series60-Remote is an application to manage your S60 mobile phone.
+Home-page: http://series60-remote.sf.net
+Author: Lukas Hetzenecker
+Author-email: LuHe@gmx.at
+License: GPL2
+Description: Series60-Remote is an application for Linux and XP that manages Nokia mobile phones with the S60 operating system. The application provides the following features:
+        - Message management
+        - Contact management
+        - File management
+        
+Platform: UNKNOWN

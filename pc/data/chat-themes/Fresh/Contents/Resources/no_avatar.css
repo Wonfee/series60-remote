@@ -1,0 +1,28 @@
+.message {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  min-height: 0px;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-left: 0px;
+}
+
+.message .content {	
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.message .date {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.message .author {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.message .avatar {
+	display:none;
+}
+

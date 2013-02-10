@@ -1,0 +1,16 @@
+@import('../main.css');
+
+/*** NO AVATAR BAR ***/
+
+.avatar {
+  visibility: hidden;
+}
+
+body {
+  background-image: none;
+}
+
+#Chat {
+  margin-right: 0;
+  margin-left: 0;
+}

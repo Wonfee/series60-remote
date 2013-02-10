@@ -1,0 +1,96 @@
+actions/application-exit
+actions/appointment-new
+actions/arrow-down-double
+actions/arrow-down
+actions/arrow-up-double
+actions/arrow-up
+actions/configure
+actions/dialog-cancel
+actions/dialog-close
+actions/dialog-ok-apply
+actions/dialog-ok
+actions/edit-copy
+actions/edit-delete
+actions/edit-undo
+actions/document-edit
+actions/document-export
+actions/document-import
+actions/document-open
+actions/go-home
+actions/go-jump-today
+actions/go-next
+actions/go-previous
+actions/go-up
+actions/journal-new
+actions/list-add
+actions/list-add-user
+actions/list-remove
+actions/list-remove-user
+actions/mail-message-new message-chat svg-size-32
+actions/mail-receive message-history
+actions/mail-send message-send
+actions/object-rotate-left object-rotate-left svg-size-16
+actions/object-rotate-right object-rotate-right svg-size-16
+actions/view-pim-journal emblem-event size-16 svg-size-16
+actions/task-new
+actions/user-properties
+actions/view-calendar
+actions/view-calendar-birthday emblem-birthday size-16 svg-size-16
+actions/view-calendar-wedding-anniversary emblem-anniversary size-16 svg-size-16
+actions/view-refresh
+actions/view-statistics
+apps/download_manager download only-svgz
+apps/internet-mail messages
+apps/kwalletmanager summary
+apps/preferences-contact-list contacts
+categories/applications-multimedia device-class-audio-video
+devices/audio-card device-class-audio-card
+devices/audio-headset device-class-audio-headset
+devices/audio-input-line device-class-audio-input
+devices/audio-input-microphone device-class-audio-microphone
+devices/camera-photo device-class-camera
+devices/camera-web device-class-camera-web
+devices/computer device-class-computer
+devices/computer-laptop device-class-laptop
+devices/drive-harddisk
+devices/input-gaming device-class-gaming
+devices/input-keyboard device-class-input-keyboard
+devices/input-mouse device-class-input-mouse
+devices/input-tablet device-class-input-tablet
+devices/media-flash-sd-mmc
+devices/modem device-class-modem
+devices/network-wireless-connected-50 device-class-network-50
+devices/network-wireless-connected-75 device-class-network-75
+devices/network-wireless-connected-100 device-class-network-100
+devices/network-wireless device-class-network
+devices/network-wireless device-class-unknown
+devices/pda device-class-pda
+devices/phone-openmoko-freerunner device-class-openmoko
+devices/phone phone size-64
+devices/printer device-class-printer
+devices/scanner device-class-scanner
+devices/video-display device-class-video-display
+devices/video-television device-class-video-television
+mimetypes/application-msword
+mimetypes/application-octet-stream
+mimetypes/application-pdf
+mimetypes/application-vnd.ms-excel
+mimetypes/application-vnd.ms-powerpoint
+mimetypes/application-x-java
+mimetypes/audio-x-generic
+mimetypes/audio-x-wav
+mimetypes/image-x-generic
+mimetypes/text-plain
+mimetypes/text-x-ldif
+mimetypes/text-x-vcard
+mimetypes/unknown
+mimetypes/video-x-generic
+mimetypes/inode-directory
+places/user-identity 
+status/appointment-recurring emblem-recurring size-16 svg-size-16
+status/dialog-information
+status/mail-unread-new message-new size-64
+status/object-locked emblem-readonly size-16 svg-size-16
+status/task-complete emblem-todo-completed size-16 svg-size-16
+status/task-ongoing emblem-todo size-16 svg-size-16
+status/user-away wait

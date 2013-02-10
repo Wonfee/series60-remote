@@ -1,0 +1,78 @@
+@import('../main.css');
+
+/*** COMPACT ***/
+
+/* Page */
+
+body {
+  background-image: url("../images/Modern/body-compact.png"); /* The avatar bar background image, with people names light background */
+}
+
+/* Messages */
+
+.messages {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-right: 1px;
+  clear: both;
+}
+
+.clearer {
+  clear: both;
+}
+
+.messages.rtl {
+  padding-right: 0;
+  padding-left: 1px;
+}
+
+.messages.you {
+  border-top: 1px solid #1e5996;
+  background: transparent url('../images/Modern/side-you.png') 100% 0 no-repeat;
+}
+
+.messages.me {
+  border-top: 1px solid #59971e;
+  background: transparent url('../images/Modern/side-me.png') 100% 0 no-repeat;
+}
+
+.messages.you.rtl {
+  background-position: 0 0;
+}
+
+.messages.me.rtl {
+  background-position: 0 0;
+}
+
+.messages > .message.you { /* The first message from one person, just following a heading */
+  border-top: 1px solid #cedbe8; /* The (very light) color of the pixel just bellow the top dark border of the heading */
+}
+
+.messages > .message.me { /* The first message from one person, just following a heading */
+  border-top: 1px solid #e4f8cb; /* The (very light) color of the pixel just bellow the top dark border of the heading */
+}
+
+/* Headings */
+
+.heading.you, .heading.me {
+  float: left;
+  width: 99px;
+  margin-top: -1px; /* Merge .messages and .heading top-borders */
+}
+
+.heading.you div div, .heading.me div div {
+  background-image: none; /* The floating waves */
+}
+
+.message.you, .message.me {
+  margin-left: 102px;
+}
+
+.heading.you.rtl, .heading.me.rtl {
+  float: right;
+}
+
+.message.you.rtl, .message.me.rtl {
+  margin-left: 0;
+  margin-right: 102px;
+}

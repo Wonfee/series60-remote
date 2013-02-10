@@ -1,0 +1,9 @@
+- Do NOT use New-style Signal and Slot Support
+   Use self.connect(self.movie, SIGNAL("frameChanged(int)"),  SIGNAL("needsRedraw()"))
+   instead of self.movie.frameChanged.connect(self.needsRedraw)
+   
+   We need to support the latest binary release of PyQt4 for Python 2.5 and Windows
+   and this release version is 4.4.3, which doesn't support new-style signals and slots.
+   
+   We can use new-style signals and slots when there is a new release of PyQt4 for Python 2.5
+   or pyinstaller support Python 2.6 (so we can drop Python 2.5 support).

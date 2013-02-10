@@ -1,0 +1,216 @@
+@import('../main.css');
+
+/*** COMPACT ***/
+
+/* Page */
+
+body {
+  background-image: url("../images/Modern/body-compact.png"); /* The avatar bar background image, with people names light background */
+}
+
+/* Messages */
+
+.messages {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding-right: 1px;
+  clear: both;
+}
+
+.clearer {
+  clear: both;
+}
+
+.messages.rtl {
+  padding-right: 0;
+  padding-left: 1px;
+}
+
+.messages.you {
+  border-top: 1px solid #1e5996;
+  background: transparent url('../images/Modern/side-you.png') 100% 0 no-repeat;
+}
+
+.messages.me {
+  border-top: 1px solid #59971e;
+  background: transparent url('../images/Modern/side-me.png') 100% 0 no-repeat;
+}
+
+.messages.you.rtl {
+  background-position: 0 0;
+}
+
+.messages.me.rtl {
+  background-position: 0 0;
+}
+
+.messages > .message.you { /* The first message from one person, just following a heading */
+  border-top: 1px solid #cedbe8; /* The (very light) color of the pixel just bellow the top dark border of the heading */
+}
+
+.messages > .message.me { /* The first message from one person, just following a heading */
+  border-top: 1px solid #e4f8cb; /* The (very light) color of the pixel just bellow the top dark border of the heading */
+}
+
+/* Headings */
+
+.heading.you, .heading.me {
+  float: left;
+  width: 99px;
+  margin-top: -1px; /* Merge .messages and .heading top-borders */
+}
+
+.heading.you div div, .heading.me div div {
+  background-image: none; /* The floating waves */
+}
+
+.message.you, .message.me {
+  margin-left: 102px;
+}
+
+.heading.you.rtl, .heading.me.rtl {
+  float: right;
+}
+
+.message.you.rtl, .message.me.rtl {
+  margin-left: 0;
+  margin-right: 102px;
+}
+
+/*** COMPACT, NO AVATAR BAR ***/
+
+body {
+  background-position: -115px 50%; /* People names light background */
+}
+
+/*** LUXURY ***/
+
+/* You: Burgundy
+ * Me:  Black
+ *
+ * Warning, due to a KHTML bug, we do not use "black" background colors for headings, but we use #010101.
+ * In the counter case, transparent PNGs over those black regions get corrupted elsewhere.
+ *
+ */
+
+/* Page */
+
+body {
+  background-image: url("../images/Luxury/body.png"); /* The avatar bar background image */
+}
+
+/* Buddy icons at the left of the window */
+
+.avatar.you {
+  color: #80081e; /* The border color of the avatar block */
+  background-image: url('../images/Luxury/avatar-you.png');
+}
+
+.avatar.me {
+  color: #010101; /* The border color of the avatar block */
+  background-image: url('../images/Luxury/avatar-me.png');
+}
+
+/* Time stamp */
+
+.you .time {
+  color: #80081e; /* The border color of the avatar block */
+}
+
+.me .time {
+  color: #010101; /* The border color of the avatar block */
+}
+
+/* Headings */
+
+.heading.you {
+  border-color: #80081e;
+  background-color: #80081e;
+}
+
+.heading.me {
+  border-color: #010101;
+  color: white;
+  background-color: #010101;
+}
+
+.heading.you > div {
+  background-color: #80081e;
+}
+
+.heading.me > div {
+  background-color: #010101;
+}
+
+/* Message body */
+
+.message.you {
+  border-left-color: #80081e;
+  background: #fAf0f0 url("../images/Luxury/bottom-you.png") 0 100% no-repeat; /* Color: Saturation=10, Value=250 */
+}
+
+.message.me {
+  border-left-color: #010101;
+  background: #f8f8f8 url("../images/Luxury/bottom-me.png") 0 100% no-repeat; /* Color: Saturation=0, Value=248 */
+}
+
+.message.you.rtl {
+  border-right-color: #80081e;
+  background: #fAf0f0 url("../images/Luxury/bottom-you-rtl.png") 100% 100% no-repeat;
+}
+
+.message.me.rtl {
+  border-right-color: #010101;
+  background: #f8f8f8 url("../images/Luxury/bottom-me-rtl.png") 100% 100% no-repeat;
+}
+
+/*** NO AVATAR BAR ***/
+
+.avatar {
+  visibility: hidden;
+}
+
+body {
+  background-image: none;
+}
+
+#Chat {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+/*** LUXURY COMPACT ***/
+
+/* You: Burgundy
+ * Me:  Black
+ *
+ * Warning, due to a KHTML bug, we do not use "black" background colors for headings, but we use #010101.
+ * In the counter case, transparent PNGs over those black regions get corrupted elsewhere.
+ *
+ */
+
+/* Page */
+
+body {
+  background-image: url("../images/Luxury/body-compact.png"); /* The avatar bar background image, with people names light background */
+}
+
+/* Messages */
+
+.messages.you {
+  border-top-color: #80081e;
+  background-image: url('../images/Luxury/side-you.png');
+}
+
+.messages.me {
+  border-top-color: #010101;
+  background-image: url('../images/Luxury/side-me.png');
+}
+
+.messages > .message.you { /* The first message from one person, just following a heading */
+  border-top-color: #e4cace; /* The (very light) color of the pixel just bellow the top dark border of the heading */
+}
+
+.messages > .message.me { /* The first message from one person, just following a heading */
+  border-top-color: #c8c8c8; /* The (very light) color of the pixel just bellow the top dark border of the heading */
+}

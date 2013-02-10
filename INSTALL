@@ -1,0 +1,114 @@
+REQUIREMENTS
+------------
+
+ - PC:
+          - Operating System: GNU/Linux or Windows XP/Vista/7
+          - Python 2.4
+          - PyQt 4.4
+          - pybluez
+              - pybluez > 0.17 is required to run under Windows Vista and 7
+
+ - Mobile phone
+          - Operating system: S60 3rd Edition
+              ( Here is a list of devices: http://series60-remote.sourceforge.net/index.php?module=Content&func=view&pid=8 )
+          - PyS60 (will be installed when you run the wizard)
+
+
+OPTIONAL PACKAGES
+-----------------
+
+ - PC
+           - PyOBEX or Obexftp (for sending *.sis files to the phone, File Browser)
+           - Matplotlib (for generating statistics)
+
+
+INSTALLATION
+------------
+
+Windows: There is also a binary package available, please use this for an easy installation.
+Fedora Linux: There is also a RPM package available, please use this for an easy installation.
+
+Linux:
+Please install all requirements first, for example use this command in Fedora:
+# su -c 'yum install python PyQt4 pybluez python-obexftp python-matplotlib'
+
+Ubuntu needs the following packages:
+# sudo aptitude install python python-obexftp python-matplotlib python-bluez python-qt4 python-qt4-sql sqlite3 libqt4-sql-sqlite
+
+You can test the application before you install it:
+# cd pc
+# ./series60_remote.py
+
+If you want to install the application just run
+# ./setup.py install
+in your root directory.
+
+This will create the folders /usr/lib/pythonX.Y/site-packages/series60_remote
+and /usr/share/series60-remote and a wrapper script in /usr/bin/series60-remote
+on Linux.
+
+If you want to change these folders you have to use the --prefix argument (for
+example: ./setup.py install --prefix=/usr/local )
+
+
+SPECIAL NOTES FOR USERS OF THE SVN VERSION
+-------------------------------------------
+
+You have to run
+# cd pc
+# ./mkpyqt.py
+first.
+
+If you're on Linux please run
+# cd mobile
+# ./create_package
+# cd ..
+# cd pc
+# ./generate-pro.sh
+too.
+
+
+----------------------------------------------
+THE FOLLOWING SECTIONS ARE ONLY FOR DEVELOPERS
+----------------------------------------------
+
+
+CREATE A SOURCE DISTRIBUTION
+----------------------------
+
+If you want to create a source archive (tar.gz) you have to run:
+# ./setup.py sdist
+
+This will create the file series60-remote-X.Y.tar.gz in the dist/ folder.
+
+
+CREATE A BINARY DISTRIBUTION
+----------------------------
+
+If you want to create a RPM file for many Linux distributions use the spec
+file in pc/install/rpm:
+# cd pc/install/rpm
+# rpmbuild -ba series60-remote.spec
+
+You can also create an executable file for MS Windows (you have to run the following
+commands under windows):
+At first you have to install PyInstaller and Inno Setup
+
+# cd pc/install/win32
+# C:\PythonX.Y\python.exe \path\to\pyinstaller\Build.py series60-remote.spec
+
+| Note: You can also create a simple wrapper script in your path with the following content:
+| C:\PythonX.Y\python.exe "path\\to\\pyinstaller\Build.py" %1%
+| If you named it Build.bat you can call if afterwards with
+| # Build.bat series60-remote.spec
+| ( Much simpler, isn't it? ;) )
+
+This will create the directory dist/ with the executable series60-remote.exe.
+Please test this file before you proceed.
+
+Now we can build an installer with Inno Setup:
+Just open the series60-remote.iss file with your Inno Setup Compiler
+and click on Build - Compile.
+
+This will create series60-remote-X.Y.exe in the Output directory.
+

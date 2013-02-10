@@ -1,0 +1,64 @@
+0.7.0
+ - TODO
+  - It should be possible to extend the application using plugins
+  - Plugin: Make screenshots of your phone
+  - Plugin: Control the keypad of your phone 
+
+0.6.0
+ - TODO
+  - Support more mobile phone operating systems:
+    - Google Android
+    - Series 60 1st Edition
+    - Series 60 2nd Edition
+    - S60 3rd Edition (done, just some renaming...)
+    - S60 5th Edition (port to PyS60 2.0)
+  - Synchronisation of folders from PC->mobile (check for timestamps,...)
+  - Connect you phone over USB (libusb)
+
+0.5.0
+ - TODO
+   - Show emoticons (emoticon set compatible to Kopete emoticons?)
+   - Support for printing messages, contacts and calendar entries
+   - Contact groups
+   - MMS support
+
+- DONE
+   - Make chat themes configureable (compatible to Kopete themes)
+   - Import contacts from vCard and LDIF files
+   - Calendar / TODO management
+   - Export Calendar and TODO entries to HTML and CVS
+   - Tabbed chat
+   
+0.4.0
+ - TODO
+   - Export messages to HTML, CSV and plain-text files
+   - Export contacts to HTML, CSV and plain-text files
+   - Update checker
+   - Show incoming calls
+   - Drag & Drop in Files tab
+   - Add a simple DBUS Object
+   - Packages for openSuse and Mandrivia
+     Include the package in the repository of these distros:
+     - Remove the *.sis packages, they have to be downloaded in the first-run wizard
+   - Web: Add link to changelog
+   - Web: Documentation
+
+ - DONE
+   - Add INSTALL file
+   - Contact management
+   - File management
+   - Download the PyS60 sis package in first start wizard and transfer it to the phone
+   - Message statistics
+   - Favorite contacts
+   - Automatic database upgrade to a new version
+   - Speed up the History browser and/or insert HTML text in a seperate thread - Show "Please wait..." until the thread is finished
+   - Request unread messages after the connection establishment is finished
+   - Add a simple build/install script for Linux
+   - Build a rpm package for Fedora
+   - INSTALL file: Refer to the names of the required packages in Ubuntu/Debian
+   - BUGFIX: After a click to the contact tab the filter bar has focus - the default text isn't deleted when changing the text
+   - Update mobile *.sis file to new version when the application is updated
+   - Show error message when connection to mobile phone failed (with note to .sis file)
+   - Packages for Ubuntu and Debian
+   - Mobile: Check for offline mode
+   - Mac OS X binary

@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title><!--[var pagetitle]--></title>
+<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+<div class="top">
+<div class="headline"><!--[var headline]--></div>
+<a href="<!--[var homepage_link]-->"><!--[var homepage]--></a> | <a href="<!--[var messages_link]-->"><!--[var messages]--></a> | <a href="<!--[var contacts_link]-->"><!--[var contacts]--></a>
+</div>
+
+<!--[if calendar_sidebar]--><div class="sidebar">
+<!--[foreach day_calendar]-->
+<div class="calendar">
+<table width="92%">
+<tr>
+<td align="center">
+<!--[if last_month]--><a href="<!--[var back_month_link]-->">&lt;</a>
+<!--[else last_month]-->&lt;<!--[endif last_month]-->
+</td>
+<th colspan="5"><!--[var month]--></th>
+<td align="center">
+<!--[if next_month]--><a href="<!--[var next_month_link]-->">&gt;</a>
+<!--[else next_month]-->&gt;<!--[endif next_month]-->
+</td>
+</tr>
+<tr>
+<th><!--[var string_monday_short]--></th>
+<th><!--[var string_tuesday_short]--></th>
+<th><!--[var string_wednesday_short]--></th>
+<th><!--[var string_thursday_short]--></th>
+<th><!--[var string_friday_short]--></th>
+<th><!--[var string_saturday_short]--></th>
+<th><!--[var string_sunday_short]--></th>
+</tr>
+<!--[foreach week]-->
+<tr>
+<!--[foreach day]-->
+<!--[if day_in_other_month]-->
+<!--[if day_has_messages]--><td align="center" class="other_month" width="14%"><a href="<!--[var day_link]-->"><!--[var day]--></a></td>
+<!--[else day_has_messages]--><td align="center" class="other_month" width="14%"><!--[var day]--></td><!--[endif day_has_messages]-->
+<!--[else day_in_other_month]-->
+<!--[if day_has_messages]-->
+<!--[if current_day]--><td align="center" class="current_day" width="14%"><a href="<!--[var day_link]-->"><!--[var day]--></a></td>
+<!--[else current_day]--><td align="center" width="14%"><a href="<!--[var day_link]-->"><!--[var day]--></a></td>
+<!--[endif current_day]-->
+<!--[else day_has_messages]--><td align="center" width="14%"><!--[var day]--></td><!--[endif day_has_messages]-->
+<!--[endif day_in_other_month]-->
+<!--[/foreach day]-->
+</tr>
+<!--[/foreach week]-->
+</table>
+</div>
+<!--[/foreach day_calendar]-->
+
+<!--[foreach month_calendar]-->
+<div class="calendar">
+<table width="90%">
+<tr>
+<td align="center">
+<!--[if last_year]--><a href="<!--[var back_year_link]-->">&lt;</a>
+<!--[else last_year]-->&lt;<!--[endif last_year]-->
+</td>
+<th colspan="4"><!--[var year]--></th>
+<td align="center">
+<!--[if next_year]--><a href="<!--[var next_year_link]-->">&gt;</a>
+<!--[else next_year]-->&gt;<!--[endif next_year]-->
+</td>
+</tr>
+<!--[foreach six_months]-->
+<tr>
+<!--[foreach month]-->
+<!--[if month_has_messages]-->
+<!--[if current_month]--><td align="center" class="current_month" width="17%"><a href="<!--[var month_link]-->"><!--[var month]--></a></td>
+<!--[else current_month]--><td align="center" width="17%"><a href="<!--[var month_link]-->"><!--[var month]--></a></td>
+<!--[endif current_month]-->
+<!--[else month_has_messages]-->
+<td align="center" width="17%"><!--[var month]--></td>
+<!--[endif month_has_messages]-->
+<!--[/foreach month]-->
+</tr>
+<!--[/foreach six_months]-->
+</table>
+</div>
+<!--[/foreach month_calendar]-->
+
+</div>
+<!--[endif calendar_sidebar]-->
+
+<div class="content">
+<h1><!--[var caption]--></h1>
+
+<!--[foreach message]-->
+<!--[if message_is_incoming]-->
+<div class="message incoming">
+<!--[else message_is_incoming]-->
+<div class="message outgoing">
+<!--[endif message_is_incoming]-->
+<table>
+<tr class="messagecaption"><td class="messageaddr"><!--[var message_address]--></td><td align="right"><!--[var message_datetime]--></td></tr>
+<tr><td colspan="2" class="messagetext"><!--[var message_text]--></td></tr>
+</table>
+</div>
+<!--[/foreach message]-->
+<!--[if statistics_image]-->
+<h1><!--[var string_statistics]--></h1>
+<img src="<!--[var statistics_link]-->" width="740" alt="Message statistics">
+<!--[endif statistics_image]-->
+<br />
+
+<div class="messagelinks">
+<table>
+<tr>
+<!--[if last_page]-->
+<td align="left"><a href="<!--[var last_page_link]-->">&lt; <!--[var string_last_page]--></a><br /><!--[var last_page]--></td>
+<!--[endif last_page]-->
+<!--[if next_page]-->
+<td align="right"><a href="<!--[var next_page_link]-->"><!--[var string_next_page]--> &gt;</a><br /><!--[var next_page]--></td>
+<!--[endif next_page]-->
+</tr>
+</table>
+</div>
+
+</div>
+
+</body>
+</html>

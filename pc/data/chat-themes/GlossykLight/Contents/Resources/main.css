@@ -1,0 +1,308 @@
+/*******************************************************************
+ * Main explanations ***********************************************
+ *******************************************************************
+
+Classes :
+- me / you / action / status
+- ltr / rtl
+- avatar / overlay / icon / name
+- heading / headingOnly / message / time / content
+
+Quite "advanced" CSS notions used here:
+- A tag can have several classes: class="one two three"
+  The CSS rule ".one.three" selects tags that have BOTH classes "one" and "three"
+- "tag1 > tag2" selects the tag2 that is DIRECTLY a child of tag1
+  And not tag2 that are child of child of tag1...
+
+********************************************************************/
+
+/* Page */
+
+body {
+  margin: 4px;
+  background: white url("images/Modern/body.png") 0 50% repeat-y fixed; /* The avatar bar background image */
+  color: black;
+}
+
+img {
+  vertical-align: middle;
+  border: none;
+}
+
+.ltr {
+  direction: ltr;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+/* Buddy icons at the left of the window */
+
+.avatar {
+  position: fixed;
+  left: 4px;
+  padding: 4px 4px 0 4px;
+  text-align: center;
+  width: 106px;
+  cursor: default;
+  font-weight: bold;
+  text-shadow: white 0 0 4px, white 0 0 3px, white 0 0 2px, white 0 0 1px;
+}
+
+.avatar.you {
+  top: 4px;
+  color: #1e5996; /* The border color of the avatar block */
+  background: transparent url('images/Modern/avatar-you.png') no-repeat;
+}
+
+.avatar.me {
+  bottom: 4px;
+  color: #68ae0d; /* The border color of the avatar block */
+  background: transparent url('images/Modern/avatar-me.png') no-repeat;
+}
+
+.avatar .name {
+  height: 1.4em;
+  text-align: center;
+  font-size: .8em;
+  overflow: hidden;
+  width: 96px;
+  margin: 0;
+  margin-top: -17px;
+}
+
+.avatar .overlay {
+  position: relative; /* Relative and not absolute, so the div.avatar get the height of the .icon+.name */
+  top: -3px; /* The padding of the div.avatar - 1 pixel of border (in the image) */
+  left: -3px;
+  width: 104px;
+  height: 104px;
+  background-image: url('images/avatar-overlay.png');
+  z-index: 500;
+}
+
+.avatar .icon {
+  position: relative;
+  vertical-align: top;
+  margin-top: -103px; /* The height of the overlay image - 1 pixel for the padding */
+  left: 1px;
+  margin-bottom: 23px;
+  width: 96px; /* Proportionnaly resize down images to reasonable size */
+  height: 96px;
+}
+
+.avatar .icon div { /* To be able to center non-square avatars both vertically and horizontally */
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 96px;
+  height: 96px;
+}
+
+.avatar .icon img {
+  max-width: 96px;
+  max-height: 96px;
+}
+
+/* Chat area */
+
+#Chat {
+  margin-left: 115px; /* 110 + 1 + 4  (bar + border + margin) */
+}
+
+/* Time stamp */
+
+.time {
+  cursor: default;
+  font-size: .8em;
+  float: right;
+  padding: 0 3px;
+}
+
+.messages .rtl .time {
+  float: left;
+}
+
+.you .time {
+  color: #1e5996; /* The border color of the avatar block */
+}
+
+.me .time {
+  color: #68ae0d; /* The border color of the avatar block */
+}
+
+/* Headings */
+
+.heading { /* The light inner border */
+  background-image: url('images/message-head-light.png');
+  background-position: 0 50%;
+  padding: 1px;
+}
+
+.heading > div { /* The background image */
+  background-image: url('images/message-head.png');
+  background-position: 0 50%;
+}
+
+.heading > div > div { /* The floating waves */
+  background-image: url('images/messages-head-right.png');
+  background-position: 100% 50%;
+  background-repeat: no-repeat;
+}
+
+.heading.rtl > div > div {
+  background-position: 0 50%;
+}
+
+.heading.you, .heading.me {
+  margin-top: 4px;
+  overflow: auto;
+  cursor: default;
+}
+
+.heading.you {
+  border: solid #1e5996 1px;
+  color: white;
+  background-color: #1e5996;
+}
+
+.heading.me {
+  border: solid #59971e 1px;
+  color: black;
+  background-color: #84de10;
+}
+
+.heading.you > div {
+  background-color: #1e5996;
+}
+
+.heading.me > div {
+  background-color: #84de10;
+}
+
+.heading.you div div, .heading.me div div {
+  white-space: pre; /* Only one line (in case of very long pseudo names) */
+  overflow: hidden;
+}
+
+.heading.status { /* Gray heading */
+  border: solid #808080 1px;
+  background-color: #969696;
+  color: black;
+  margin: 8px;
+  overflow: auto;
+  font-variant: italic;
+  text-align: center;
+  text-shadow: white 0 0 2px, white 0 0 1px;
+}
+
+.heading.action { /* Orange heading */
+  border: #de6510 solid 1px;
+  background-color: #de6510;
+  color: black;
+  margin: 8px;
+  overflow: auto;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: white 0 0 2px, white 0 0 1px;
+}
+
+.heading.status > div {
+  background-color: #969696;
+}
+
+.heading.action > div {
+  background-color: #de6510;
+}
+
+.heading.status > div > div, .heading.action > div > div {
+  padding: 1px;
+}
+
+.heading.status.ltr > div > div, .heading.action.ltr > div > div {
+  background-position: 0 50%;
+}
+
+.messages {
+  vertical-align: middle;
+}
+
+.messages .icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+
+.messages .icon div { /* To be able to center non-square avatars both vertically and horizontally */
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+}
+
+.messages .icon img {
+  max-width: 16px; /* Proportionnaly resize down images to reasonable size */
+  max-height: 16px;
+}
+
+/* Message body */
+
+.message {
+  padding-bottom: 1px;
+}
+
+.message .content {
+  padding-left: 2px;
+  overflow: visible;
+}
+
+.message.rtl .content {
+  padding-left: 0;
+  padding-right: 2px;
+}
+
+.message.you {
+  border-left: #1e5996 solid 1px;
+  background: #f1f4f8 url("images/Modern/bottom-you.png") 0 100% no-repeat; /* Color: Saturation=7, Value=248 */
+}
+
+.message.me {
+  border-left: #59971e solid 1px;
+  background: #f5faf0 url("images/Modern/bottom-me.png") 0 100% no-repeat; /* Color: Saturation=10, Value=250 */
+}
+
+.message.you.rtl {
+  border-left: none;
+  border-right: #1e5996 solid 1px;
+  background: #f1f4f8 url("images/Modern/bottom-you-rtl.png") 100% 100% no-repeat;
+}
+
+.message.me.rtl {
+  border-left: none;
+  border-right: #59971e solid 1px;
+  background: #f5faf0 url("images/Modern/bottom-me-rtl.png") 100% 100% no-repeat;
+}
+
+/* Perfect "Copy discution as text" */
+
+  /* Copy time to clipboard: */
+
+    /* We use <span> to not have line break between time and message but we need to display them as <div>: */
+    .time, .content, .headingOnly { display: block; }
+
+    /* No "display: none;" because in that case, the text would not be copied to clipboard and this is our whole point. */
+    /* We move it in a place where it is not disturbing and we visually hide it: */
+    .textCopy { display: block; float: left; width: 1px; overflow: hidden; visibility: hidden; }
+
+  /* Remove spaces between messages when copying to text: */
+
+    /* <div id="insert" /> is transformed by Kopete to <span>...</span>
+     * The last spaces and line breaks in <span>s are interpreted when copying to text.
+     * If displayed as block, those spaces disapear, and we get a very clean copy.
+     * Note: we also added a class="insert" with id="insert" so that ALL insert spans gets this rule applied:
+     */
+    div.insert > span { display: block; }

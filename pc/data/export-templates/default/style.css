@@ -1,0 +1,165 @@
+.top
+{
+   font-size: 16px;
+   text-align: center;
+   font-weight: bold;
+   font-family: Georgia, Verdana;
+   display: block;
+   color: #009900;
+   background: #E6E6E6;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.headline
+{
+   padding-bottom: 7px;
+}
+
+.top a:link,
+.top a:visited,
+.top a:active
+{
+   color: black;
+   margin: 1px;
+   text-decoration: none;
+   padding-bottom: 1px;
+}
+
+.top a:hover
+{
+   background-color: #88CD88;
+   margin: 0px;
+   border: 1px solid #009900;
+   color: #000000;
+   text-decoration: none;
+   padding-bottom: 1px;
+}
+
+.sidebar {
+   background: #EEEEEE;
+   color: #666666;
+   border-bottom: 5px solid #DADADA;
+   width: 230px;
+   padding: 10px 20px 20px 20px;
+   float: left;
+}
+
+.calendar {
+   background-color: white;
+   border: 1px solid #CCC;
+   margin-top: 10px;
+   margin-bottom: 15px;
+}
+
+.calendar a,
+.calendar a:link,
+.calendar a:visited,
+.calendar a:active
+{
+   color: #999999;
+   text-decoration: underline;
+}
+
+.calendar table {
+   margin: 5px 10px 10px;
+   border-collapse: collapse;
+}
+
+.calendar th,
+.calendar td
+{
+   padding: 2px 4px;
+   font-size: 70%;
+}
+
+.calendar td
+{
+   color: #999999;
+   font: 75% Arial, Tahoma, Verdana, Helvetica, sans-serif;
+}
+
+.calendar td.other_month {
+   background-color: #EEEEEE;
+}
+
+.calendar td.current_day {
+   font-weight: bold;
+}
+
+.calendar td.current_month {
+   font-weight: bold;
+}
+
+.content
+{
+   margin: 0px 20px 0px 270px;
+   padding: 20px 0px 0px 20px;
+}
+
+.message table
+{
+   width: 80%;
+   border-collapse: collapse;
+   margin-bottom: 15px;
+}
+
+.message tr
+{
+   border: 1px solid #CCCCCC;
+}
+
+.messagetext
+{
+   padding-left: 15px;
+}
+
+.messageaddr
+{
+   font-weight: bold;
+}
+
+.incoming .messagecaption
+{
+   background-color: #FCFFE5;
+   color: orangered;
+}
+
+.outgoing .messagecaption
+{
+   background-color: #E9F5FF;
+   color: dodgerblue;
+}
+
+.messagelinks
+{
+   font-size: 80%;
+   font-family: Helvetica, sans-serif;
+   color: #323232;
+}
+
+.messagelinks table
+{
+   width: 80%;
+   margin-bottom: 15px;
+}
+
+.messagelinks a
+{
+   color: black;
+}
+
+.thumbnail_image
+{
+   float: left;
+   padding-left: 160px;
+   padding-top: 35px;
+}
+
+h1
+{
+   font-size: 18px;
+   font-weight: normal;
+   font-family: Georgia, Verdana;
+   color: #009900;
+}

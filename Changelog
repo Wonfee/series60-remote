@@ -1,0 +1,112 @@
+Changelog
+
+0.5.0 Alpha 1 (0.4.80)
+======================
+   * Calendar support
+     - Support for recurring entries
+     - Appointments, Events and TODO-items are displayed and can be edited
+   * Many improvements in the export process
+     - New export dialog
+     - LDIF, vCard and CSV export (by Pierre-Yves)
+   * Themeable chat windows
+   * Tabbed chat
+   * Import of contacts from vCard or LDIF files (by Pierre-Yves)
+   * Improved GUI for device scan and selection
+   * Update checker
+   * Autostart of the application
+   * Autoconnect to favourite devices
+   * Widget style and application language is now configureable in the settings
+   * Show connection state during connection establishment
+   * Support for PyS60 2.0 (and therefore official support for S60 5th Edition)
+
+0.4.0
+=====
+   * Add new translations
+     - Dutch translation by Chris Van Bael
+     - Czech translation by Marian Kyral
+     - Polish translation by Piotr KALINA
+     - Italian translation by Mirko Allegretti
+   * Bugfixes and stability improvements
+
+0.4.0 RC 2 (0.3.93)
+====================
+   * Show error message when connection to OBEX service failed
+   * BUGFIX: Downloading files using OBEX works again
+   * BUGFIX: Ignore null values in contact database (mobile script)
+
+0.4.0 RC 1 (0.3.92)
+====================
+   * Support for Mac OS X (lightblue as bluetooth wrapper)
+      Release of a dmg image for Mac OS X 10.5 Leopard and 10.5 Snow Leopard
+   * Messages and contact export
+     - HTML plugin
+   * Popups
+     - Animations are now supported
+     - Group "new message" popups of the same contact
+   * Message statistics
+     - Show also null values in graph
+       (e.g. days where no message was sent in months view)
+     - Do not reset statistics when filter, contact or view is changed
+     - Link to summary page when in detailed view
+   * Show version informations in about tab
+   * Do not show current day in chat window
+   * History: Added possibilty to navigate between dates using the arrow keys
+   * Show error message when device scan failed
+   * Device scanning is now asynchronous
+   * Show error message if database driver isn't found
+   * Faster application startup
+   * BUGFIX: Sometimes an outgoing message could get stuck in a loop
+                     ("already sending" bug)
+   * BUGFIX: Mobile phone server crashed when phone was in offline mode
+   * BUGFIX: Application was closed when pressing yes in 
+                    "Should the application stay in the system tray?"
+   * BUGFIX: Handling of contacts with birthdays prior to 1970
+   * BUGFIX: Messages in Arabic language weren't handled correctly
+                     (some messages weren't displayed in history)
+
+0.4.0 Beta 2 (0.3.91)
+=====================
+   * Show error message when the connection to the device failed
+   * Show error message when there is a protocol version mismatch between PC and mobile phone
+   * Error handling of mobile phone server
+   * INSTALL file: Refer to the names of the required packages in Ubuntu/Debian
+   * BUGFIX: After a click to the contact tab the filter bar has focus - the default text is now deleted when changing the text
+   * BUGFIX: Disable "Send SIS file to mobile phone" action in settings when ObexFTP isn't available
+   * BUGFIX: Thumbnail image handling could result in a crash of the mobile phone server application
+   * BUGFIX: "crash" of mobile phone application at 75% (fixes empty contact.title))
+   * Linux: deb package for Debian, Ubuntu and Sidux
+
+0.4.0 Beta 1 (0.3.90)
+=====================
+   * Contact management (Add, edit and delete contacts)
+   * File management (Browse files, no drag&drop yet)
+   * Message statistics
+   * Favorite contacts
+   * Wizard: Install the PyS60 package in the installation dialog
+   * Rightclick on device in settings sends Python and Application sis file to device
+   * Speed up the History browser
+   * Request unread messages after the connection establishment is finished
+   * Windows binary: Add support for Windows Vista and Windows 7
+   * Source: INSTALL file added to source code
+   * Linux: Install script
+   * Linux: Add a desktop file, will be installed in /usr/share/applications
+   * Linux: RPM package for Fedora
+
+0.3.0
+======
+   * New Log window
+   * New About dialog
+   * Ignoring contacts works again
+   * Add simple search to history dialog
+   * Strg+S as shortcut for "Send..."
+   * Multiple popups are layouted above each other
+   * Only enable send button when the recipent and the message text is not empty and you are connected
+   * Send message when the Return key is pressed (configureable)
+   * Message queue window
+      - Automatic refresh of message states
+      - Status icons
+   * Wizard
+      - 2 more pages for setting up your phone
+      - Button for Open Folder, which contains your SIS file
+   * Server application on the mobile phone
+      - New icon
