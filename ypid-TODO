@@ -1,0 +1,15 @@
+# Fix
+* long SMS (longer than 512 characters)
+* use two timestamps for SMS: transmit time and reseive time
+* use phone number
+* remove telefon numbers (like spaces and hyphens)
+* if the phone is not connected and you want to safe a new contact …
+
+# Feature
+* sending reports for SMS
+* convert characters like … to ... (can't be encoded in an SMS)
+* implement Unstructured Supplementary Service Data (USSD)
+* spell checking
+* show chat log in reverse
+* use camera, microphone, remote control
+* turn the phone off
