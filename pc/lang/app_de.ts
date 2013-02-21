@@ -511,8 +511,8 @@ Alle Änderungen gehen verloren.</translation>
     </message>
     <message>
         <location filename="ui/src/chat.ui" line="96"/>
-        <source>160 chars left; 1 message</source>
-        <translation>noch 160 Zeichen; 1 SMS</translation>
+        <source>160 chars left; 1 message; total chars: 0</source>
+        <translation>noch 160 Zeichen; 1 SMS; Zeichen insgesamt: 0</translation>
     </message>
     <message>
         <location filename="ui/src/chat.ui" line="76"/>
@@ -539,10 +539,10 @@ Alle Änderungen gehen verloren.</translation>
     </message>
     <message numerus="yes">
         <location filename="window/chat.py" line="157"/>
-        <source>%1 chars left; %n message(s)</source>
+        <source>%1 chars left; %n message(s); total chars: %2%3</source>
         <translation type="obsolete">
-            <numerusform>noch %1 Zeichen; %n SMS</numerusform>
-            <numerusform>noch %1 Zeichen; %n SMS</numerusform>
+            <numerusform>noch %1 Zeichen; %n SMS; Zeichen insgesamt: %2%3</numerusform>
+            <numerusform>noch %1 Zeichen; %n SMS; Zeichen insgesamt: %2%3</numerusform>
         </translation>
     </message>
 </context>
@@ -568,10 +568,10 @@ Alle Änderungen gehen verloren.</translation>
     </message>
     <message numerus="yes">
         <location filename="widget/ChatWidget.py" line="158"/>
-        <source>%1 chars left; %n message(s)</source>
+        <source>%1 chars left; %n message(s); total chars: %2%3</source>
         <translation>
-            <numerusform>noch %1 Zeichen; %n SMS</numerusform>
-            <numerusform>noch %1 Zeichen; %n SMS</numerusform>
+            <numerusform>noch %1 Zeichen; %n SMS; Zeichen insgesamt: %2%3</numerusform>
+            <numerusform>noch %1 Zeichen; %n SMS; Zeichen insgesamt: %2%3</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -3048,8 +3048,8 @@ Soll sie überschrieben werden?</translation>
     </message>
     <message>
         <location filename="ui/src/main.ui" line="895"/>
-        <source>160 chars left; 1 message</source>
-        <translation>noch 160 Zeichen; 1 SMS</translation>
+        <source>160 chars left; 1 message; total chars: 0</source>
+        <translation>noch 160 Zeichen; 1 SMS; Zeichen insgesamt: 0</translation>
     </message>
     <message>
         <location filename="ui/src/main.ui" line="1082"/>
@@ -3374,10 +3374,10 @@ Soll sie überschrieben werden?</translation>
     </message>
     <message numerus="yes">
         <location filename="window/mainwindow.py" line="640"/>
-        <source>%1 chars left; %n message(s)</source>
+        <source>%1 chars left; %n message(s); total chars: %2%3</source>
         <translation>
-            <numerusform>noch %1 Zeichen; %n SMS</numerusform>
-            <numerusform>noch %1 Zeichen; %n SMS</numerusform>
+            <numerusform>noch %1 Zeichen; %n SMS; Zeichen insgesamt: %2%3</numerusform>
+            <numerusform>noch %1 Zeichen; %n SMS; Zeichen insgesamt: %2%3</numerusform>
         </translation>
     </message>
     <message>

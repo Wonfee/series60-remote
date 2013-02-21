@@ -69,7 +69,7 @@ class Ui_Chat(object):
         Chat.setWindowTitle(QtGui.QApplication.translate("Chat", "Chat", None, QtGui.QApplication.UnicodeUTF8))
         self.sendButton.setText(QtGui.QApplication.translate("Chat", "Send", None, QtGui.QApplication.UnicodeUTF8))
         self.sendButton.setShortcut(QtGui.QApplication.translate("Chat", "Ctrl+S", None, QtGui.QApplication.UnicodeUTF8))
-        self.charLabel.setText(QtGui.QApplication.translate("Chat", "160 chars left; 1 message", None, QtGui.QApplication.UnicodeUTF8))
+	self.charLabel.setText(QtGui.QApplication.translate("Chat", "160 chars left; 1 message; total chars: 0", None, QtGui.QApplication.UnicodeUTF8))
 
 from widget.MessageTextEdit import MessageTextEdit
 from widget.ChatMessageView import ChatMessageView

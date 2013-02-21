@@ -637,7 +637,10 @@ class MainWindow(QMainWindow,  ui.ui_main.Ui_MainWindow):
     def textChanged(self):
         len = int(self.messageText.toPlainText().length())
         chars,  messages = self.helper.countMessages(len)
-        self.charLabel.setText(self.tr("%1 chars left; %n message(s)",  "",  messages).arg(chars))
+	if len >= 512:
+		bigsms = '***'
+	else:	bigsms = ''
+	self.charLabel.setText(self.tr("%1 chars left; %n message(s); total chars: %2%3",  "",  messages).arg(chars).arg(len).arg(bigsms))
 
         self.checkSendButton()
 

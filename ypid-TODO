@@ -1,8 +1,8 @@
 # Fix
-* long SMS (longer than 512 characters)
+* support long SMS (longer than 512 characters)
 * use two timestamps for SMS: transmit time and reseive time
-* use phone number
-* remove telefon numbers (like spaces and hyphens)
+* use phone number in the database
+* convert phone numbers (remove characters like spaces and hyphens)
 * if the phone is not connected and you want to safe a new contact …
 
 # Feature
@@ -13,3 +13,6 @@
 * show chat log in reverse
 * use camera, microphone, remote control
 * turn the phone off
+
+## Implemented
+* show if a SMS is longer than 512 characters

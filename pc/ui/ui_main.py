@@ -1052,7 +1052,7 @@ class Ui_MainWindow(object):
         self.label_3.setText(QtGui.QApplication.translate("MainWindow", "Message:", None, QtGui.QApplication.UnicodeUTF8))
         self.sendButton.setText(QtGui.QApplication.translate("MainWindow", "Send", None, QtGui.QApplication.UnicodeUTF8))
         self.sendButton.setShortcut(QtGui.QApplication.translate("MainWindow", "Ctrl+S", None, QtGui.QApplication.UnicodeUTF8))
-        self.charLabel.setText(QtGui.QApplication.translate("MainWindow", "160 chars left; 1 message", None, QtGui.QApplication.UnicodeUTF8))
+	self.charLabel.setText(QtGui.QApplication.translate("MainWindow", "160 chars left; 1 message; total chars: 0", None, QtGui.QApplication.UnicodeUTF8))
         self.label_5.setText(QtGui.QApplication.translate("MainWindow", "Contacts:", None, QtGui.QApplication.UnicodeUTF8))
         self.contactsTree.setSortingEnabled(True)
         self.contactsTree.headerItem().setText(0, QtGui.QApplication.translate("MainWindow", "Name", None, QtGui.QApplication.UnicodeUTF8))

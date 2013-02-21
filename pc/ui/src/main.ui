@@ -892,7 +892,7 @@
               <item>
                <widget class="QLabel" name="charLabel">
                 <property name="text">
-                 <string>160 chars left; 1 message</string>
+                 <string>160 chars left; 1 message; total chars: 0</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

@@ -491,15 +491,15 @@ All changes will get lost.</source>
     </message>
     <message>
         <location filename="ui/src/chat.ui" line="96"/>
-        <source>160 chars left; 1 message</source>
+        <source>160 chars left; 1 message; total chars: 0</source>
         <translation type="unfinished"></translation>
     </message>
     <message numerus="yes">
         <location filename="window/chat.py" line="157"/>
-        <source>%1 chars left; %n message(s)</source>
+        <source>%1 chars left; %n message(s); total chars: %2%3</source>
         <translation type="obsolete">
-            <numerusform>%1 chars left; %n message</numerusform>
-            <numerusform>%1 chars left; %n messages</numerusform>
+            <numerusform>%1 chars left; %n message; total chars: %2%3</numerusform>
+            <numerusform>%1 chars left; %n messages; total chars: %2%3</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -533,10 +533,10 @@ All changes will get lost.</source>
     </message>
     <message numerus="yes">
         <location filename="widget/ChatWidget.py" line="158"/>
-        <source>%1 chars left; %n message(s)</source>
+        <source>%1 chars left; %n message(s); total chars: %2%3</source>
         <translation type="unfinished">
-            <numerusform>%1 chars left; %n message</numerusform>
-            <numerusform>%1 chars left; %n messages</numerusform>
+            <numerusform>%1 chars left; %n message; total chars: %2%3</numerusform>
+            <numerusform>%1 chars left; %n messages; total chars: %2%3</numerusform>
         </translation>
     </message>
     <message numerus="yes">
@@ -2418,7 +2418,7 @@ Would you like to overwrite it?</source>
     </message>
     <message>
         <location filename="ui/src/main.ui" line="895"/>
-        <source>160 chars left; 1 message</source>
+        <source>160 chars left; 1 message; total chars: 0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2643,10 +2643,10 @@ Would you like to overwrite it?</source>
     </message>
     <message numerus="yes">
         <location filename="window/mainwindow.py" line="640"/>
-        <source>%1 chars left; %n message(s)</source>
+        <source>%1 chars left; %n message(s); total chars: %2%3</source>
         <translation type="unfinished">
-            <numerusform>%1 chars left; %n message</numerusform>
-            <numerusform>%1 chars left; %n messages</numerusform>
+            <numerusform>%1 chars left; %n message; total chars: %2%3 </numerusform>
+            <numerusform>%1 chars left; %n messages; total chars: %2%3</numerusform>
         </translation>
     </message>
     <message>
